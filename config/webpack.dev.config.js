@@ -17,10 +17,6 @@ module.exports = {
     },
     module: {
         rules: [
-            // {
-            //     test: /\.html$/,
-            //     loader: 'html-loader'
-            // },
             {
                 test: /\.(js|jsx|mjs)$/,
                 loader: 'babel-loader',
