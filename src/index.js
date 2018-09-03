@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-
-
-const App = () => {
-    return <div>55429558</div>
-}
+import App from './App.jsx'
+const Wrap = (
+        <App> 这里放测试组件 </App>
+  )
 
 ReactDOM.render(
-    <App />,
+    Wrap,
     document.getElementById('root')
 )

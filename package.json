@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node config/server.js",
-    "build": "",
+    "build": "webpack --config config/webpack.config.js",
     "docs": "",
     "docb": ""
   },
@@ -24,11 +24,19 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.1.3",
     "babel-loader": "^8.0.2",
+    "babel-plugin-import": "^1.8.0",
+    "babel-plugin-styled-components": "^1.6.0",
+    "compression-webpack-plugin": "^1.1.12",
     "express": "^4.16.3",
     "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-middleware": "^3.2.0",
@@ -36,7 +44,16 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
+    "address": "^1.0.3",
+    "antd": "^3.9.1",
+    "css-loader": "^1.0.0",
+    "opn": "^5.3.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-loader": "^3.0.0",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "style-loader": "^0.23.0",
+    "styled-components": "^3.4.5",
+    "url-loader": "^1.1.1"
   }
 }

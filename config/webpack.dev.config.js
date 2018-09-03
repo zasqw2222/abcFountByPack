@@ -2,11 +2,14 @@
 
 const path = require('path')
 const webpack = require('webpack')
-
+const merge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpackBaseConfig = require('./webpack.base')
 
-module.exports = {
+
+module.exports = merge(webpackBaseConfig, {
     mode: "development",
+    devtool: 'cheap-module-source-map',
     entry: [
         path.resolve(__dirname, '../src/index.js')
     ],
@@ -14,15 +17,6 @@ module.exports = {
         path: path.resolve(__dirname, 'build'),
         publicPath: '/',
         filename: '[name].bundle.js',
-    },
-    module: {
-        rules: [
-            {
-                test: /\.(js|jsx|mjs)$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/,
-            }
-        ]
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -32,5 +26,4 @@ module.exports = {
             Inject: true
         })
     ],
-
-}
+})
