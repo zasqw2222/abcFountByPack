@@ -14,7 +14,7 @@ app.use(webpackDevMiddleware(compiler, {
 }))
 
 
-app.listen(3000, function () {
-  console.log('app listening on port 3000!\n')
-  opn(`http://${ip || 'localhost'}:3000`)
+app.listen(9899, function () {
+  console.log('app listening on port 9899!\n')
+  opn(`http://${ip || 'localhost'}:9899`)
 })
