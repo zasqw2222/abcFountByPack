@@ -1,13 +1,13 @@
 {
-  "name": "abcFountByPack",
+  "name": "packName",
   "version": "1.0.0",
   "description": "abcFountByPack",
   "main": "index.js",
   "scripts": {
     "start": "node config/server.js",
     "build": "webpack --config config/webpack.config.js",
-    "docs": "",
-    "docb": ""
+    "docs": "styleguidist server",
+    "docb": "styleguidist build"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "react-styleguidist": "^7.3.4",
     "sass-loader": "^7.1.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
