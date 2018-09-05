@@ -9,7 +9,7 @@ const CompressionPlugin = require('compression-webpack-plugin')
 module.exports = merge(webpackBaseConfig, {
     mode: 'production',
     entry: {
-        main: path.resolve(__dirname, '../src/index.js')
+        main: path.resolve(__dirname, '../src/pack/index.js')
     },
     output: {
         path: path.resolve(__dirname, '../lib'),
