@@ -79,5 +79,8 @@ module.exports = {
             filename: 'main.css',
             chunkFilename: 'main.css',
         })
-    ]
+    ],
+    resolve: {
+        extensions: ['.wasm', '.mjs', '.js', '.json', 'jsx']
+    }
 }
