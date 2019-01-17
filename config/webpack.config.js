@@ -20,7 +20,7 @@ module.exports = merge(webpackBaseConfig, {
         umdNamedDefine: true
     },
     externals: {
-        react: {
+        'react': {
             root: 'React',
             commonjs2: 'react',
             commonjs: 'react',
@@ -32,11 +32,17 @@ module.exports = merge(webpackBaseConfig, {
             commonjs: 'react-dom',
             amd: 'react-dom',
         },
-        moment: {
+        'moment': {
             root: 'moment',
             commonjs2: 'moment',
             commonjs: 'moment',
             amd: 'moment',
+        },
+        'antd': {
+            root: 'antd',
+            commonjs2: 'antd',
+            commonjs: 'antd',
+            amd: 'antd',
         }
     },
     plugins: [
