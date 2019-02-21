@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test changes the class when hovered 1`] = `
+<div>
+  <button
+    className="ant-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      123
+    </span>
+  </button>
+  <div
+    className="src__Text-smolzl-0 hZFWxk"
+  >
+    123123
+  </div>
+</div>
+`;

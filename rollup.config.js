@@ -4,11 +4,13 @@ import commonjs from 'rollup-plugin-commonjs'
 import replace from 'rollup-plugin-replace'
 import json from 'rollup-plugin-json'
 
+const extensions = ['.js', '.jsx']
+
 // 不打包所有依赖
 const excludeAllExternals = id => !id.startsWith('.') && !id.startsWith('/');
 
 export default {
-  input: 'src/main.js',
+  input: 'src/index.js',
   output: {
     file: 'dist/bundle.js',
     format: 'cjs'
@@ -19,7 +21,7 @@ export default {
     replace({
 			'process.env.NODE_ENV': JSON.stringify('production'),
     }),
-    resolve(),
+    resolve({ extensions }),
     babel({
       exclude: 'node_modules/**'
     }),
